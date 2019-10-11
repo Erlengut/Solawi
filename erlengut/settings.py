@@ -167,3 +167,4 @@ ADMINPORTAL_NAME = "erlengut.juntagrico.science"
 ADMINPORTAL_SERVER_URL = "erlengut.juntagrico.science"
 SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+ENABLE_SHARES=False
