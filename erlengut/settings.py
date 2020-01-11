@@ -169,8 +169,8 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "1",
             "BIC" : "1",
             "NAME" : "1",
             "ESR" : "1"}
-INFO_EMAIL = "erlengut.bio@gmx.ch"
-SERVER_URL = "www.erlengut.org"
+INFO_EMAIL = "info@solawi-erlengut.ch"
+SERVER_URL = "www.solawi-erlengut.ch"
 ADMINPORTAL_NAME = "erlengut.juntagrico.science"
 ADMINPORTAL_SERVER_URL = "erlengut.juntagrico.science"
 SHARE_PRICE = "0"
