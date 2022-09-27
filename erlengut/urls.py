@@ -1,11 +1,12 @@
 
-from django.conf.urls import include, repath
+from django.conf.urls import include
+from django.urls import path, re_path
 from django.contrib import admin
 import juntagrico
 
 urlpatterns = [
-    repath(r'^admin/', admin.site.urls),
-    repath(r'^', include('juntagrico.urls')),
-    repath(r'^$', juntagrico.views.home),
-    repath(r'^impersonate/', include('impersonate.urls')),
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^', include('juntagrico.urls')),
+    re_path(r'^$', juntagrico.views.home),
+    re_path(r'^impersonate/', include('impersonate.urls')),
 ]
