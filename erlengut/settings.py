@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'juntagrico',
+    'juntagrico_billing',
     'impersonate',
     'crispy_forms',
     'adminsortable2',
