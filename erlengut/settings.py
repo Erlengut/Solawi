@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'impersonate',
     'crispy_forms',
     'adminsortable2',
+    'polymorphic',
     'erlengut',
 ]
 
@@ -101,6 +102,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware',
     'impersonate.middleware.ImpersonateMiddleware'
 ]
 
@@ -135,7 +137,7 @@ if DEBUG is True:
             whitelist_email_from_env(key)
             
 
-
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
@@ -175,8 +177,6 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "1",
             "ESR" : "1"}
 INFO_EMAIL = "info@solawi-erlengut.ch"
 SERVER_URL = "www.solawi-erlengut.ch"
-ADMINPORTAL_NAME = "erlengut.juntagrico.science"
-ADMINPORTAL_SERVER_URL = "erlengut.juntagrico.science"
 SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 ENABLE_SHARES=False
