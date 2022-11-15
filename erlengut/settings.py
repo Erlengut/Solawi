@@ -165,12 +165,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
 ORGANISATION_NAME = "Solawi im Erlengut"
 ORGANISATION_LONG_NAME = "Solawi im Erlengut"
-ORGANISATION_ADDRESS = {"name":"Solawi im Erlengut", 
-            "street" : "Erlenstrasse",
-            "number" : "41",
+ORGANISATION_ADDRESS = {"name":"Cecilia Suter und Quentin Repond", 
+            "street" : "Weberweg",
+            "number" : "15",
             "zip" : "3612",
             "city" : "Steffisburg",
-            "extra" : "1"}
+            "extra" : "-"}
 ORGANISATION_BANK_CONNECTION = {"PC" : "1",
             "IBAN" : "1",
             "BIC" : "1",
