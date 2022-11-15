@@ -181,3 +181,4 @@ SERVER_URL = "www.solawi-erlengut.ch"
 SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 ENABLE_SHARES=False
+BILLS_USERMENU = True
