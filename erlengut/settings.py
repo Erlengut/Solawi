@@ -172,9 +172,9 @@ ORGANISATION_ADDRESS = {"name":"Biogemüse Erlengut",
             "city" : "Steffisburg",
             "extra" : "-"}
 ORGANISATION_BANK_CONNECTION = {"PC" : "1",
-            "IBAN" : "1",
+            "IBAN" : "CH68 0900 0000 1603 7464 8",
             "BIC" : "1",
-            "NAME" : "1",
+            "NAME" : "Biogemüse Erlengut",
             "ESR" : "1"}
 INFO_EMAIL = "info@solawi-erlengut.ch"
 SERVER_URL = "www.solawi-erlengut.ch"
