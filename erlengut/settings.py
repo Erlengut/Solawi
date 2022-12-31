@@ -165,7 +165,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
 ORGANISATION_NAME = "Solawi im Erlengut"
 ORGANISATION_LONG_NAME = "Solawi im Erlengut"
-ORGANISATION_ADDRESS = {"name":"Cecilia Suter und Quentin Repond", 
+ORGANISATION_ADDRESS = {"name":"Biogemüse Erlengut", 
             "street" : "Weberweg",
             "number" : "15",
             "zip" : "3612",
