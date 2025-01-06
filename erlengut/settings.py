@@ -26,13 +26,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'juntagrico',
+    'erlengut',
     'juntagrico_billing',
+    'juntagrico',
+    'fontawesomefree',
+    'import_export',
     'impersonate',
     'crispy_forms',
     'adminsortable2',
     'polymorphic',
-    'erlengut',
 ]
 
 ROOT_URLCONF = 'erlengut.urls'
@@ -137,8 +139,14 @@ if DEBUG is True:
         if key.startswith("JUNTAGRICO_EMAIL_WHITELISTED"):
             whitelist_email_from_env(key)
             
-
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
+    },
+}
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
@@ -146,7 +154,7 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+LOGIN_REDIRECT_URL = "/"
 
 """
     File & Storage Settings
@@ -176,10 +184,16 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "1",
             "BIC" : "1",
             "NAME" : "Biogemüse Erlengut",
             "ESR" : "1"}
-INFO_EMAIL = "info@solawi-erlengut.ch"
-SERVER_URL = "www.solawi-erlengut.ch"
+CONTACTS = {
+    "general": "info@solawi-erlengut.ch"
+}
+ORGANISATION_WEBSITE = {
+    'name': "solawi-erlengut.ch",
+    'url': "https://www.solawi-erlengut.ch"
+}
 SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 ENABLE_SHARES=False
 BILLS_USERMENU = True
 DEFAULT_FROM_EMAIL = "info@solawi-erlengut.ch"
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
