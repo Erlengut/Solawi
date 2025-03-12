@@ -173,7 +173,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
 ORGANISATION_NAME = "Solawi im Erlengut"
 ORGANISATION_LONG_NAME = "Solawi im Erlengut"
-ORGANISATION_ADDRESS = {"name":"Biogemüse Erlengut", 
+ORGANISATION_ADDRESS = {"name":"gärtnerei fino", 
             "street" : "Weberweg",
             "number" : "15",
             "zip" : "3612",
@@ -188,8 +188,8 @@ CONTACTS = {
     "general": "info@solawi-erlengut.ch"
 }
 ORGANISATION_WEBSITE = {
-    'name': "solawi-erlengut.ch",
-    'url': "https://www.solawi-erlengut.ch"
+    'name': "fino-bio.ch",
+    'url': "https://www.fino-bio.ch"
 }
 SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
