@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
-ALLOWED_HOSTS = ['erlengut.juntagrico.science','erlengut.juntagrico.science', 'localhost',]
+ALLOWED_HOSTS = ['erlengut.juntagrico.science','erlengut.juntagrico.science', 'localhost', 'fino.juntagrico.science']
 
 
 # Application definition
