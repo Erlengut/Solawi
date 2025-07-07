@@ -171,8 +171,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
      juntagrico Settings
 """
-ORGANISATION_NAME = "Solawi im Erlengut"
-ORGANISATION_LONG_NAME = "Solawi im Erlengut"
+ORGANISATION_NAME = "gärtnerei fino"
+ORGANISATION_LONG_NAME = "gärtnerei fino"
 ORGANISATION_ADDRESS = {"name":"gärtnerei fino", 
             "street" : "Weberweg",
             "number" : "15",
@@ -182,10 +182,10 @@ ORGANISATION_ADDRESS = {"name":"gärtnerei fino",
 ORGANISATION_BANK_CONNECTION = {"PC" : "1",
             "IBAN" : "CH68 0900 0000 1603 7464 8",
             "BIC" : "1",
-            "NAME" : "Biogemüse Erlengut",
+            "NAME" : "gärtnerei fino",
             "ESR" : "1"}
 CONTACTS = {
-    "general": "info@solawi-erlengut.ch"
+    "general": "info@fino-bio.ch"
 }
 ORGANISATION_WEBSITE = {
     'name': "fino-bio.ch",
@@ -195,7 +195,7 @@ SHARE_PRICE = "0"
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 ENABLE_SHARES=False
 BILLS_USERMENU = True
-DEFAULT_FROM_EMAIL = "info@solawi-erlengut.ch"
+DEFAULT_FROM_EMAIL = "info@fino-bio.ch"
 IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
 
 LOGGING = {
