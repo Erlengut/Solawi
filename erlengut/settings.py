@@ -62,6 +62,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
+                'juntagrico.context_processors.vocabulary',
                 'django.contrib.messages.context_processors.messages',
             ],
             'loaders': [
